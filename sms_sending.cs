@@ -13,13 +13,13 @@ namespace ConsoleApp1
         {
             var client = new Client(creds: new Nexmo.Api.Request.Credentials
             {
-                ApiKey = "4c96767f",
-                ApiSecret = "hG7DnVSP0ls0LLGp"
+                ApiKey = "apiKey",
+                ApiSecret = "apiSecret"
             });
             var results = client.SMS.Send(request: new SMS.SMSRequest
             {
                 from = "Vonage SMS API",
-                to = "923352991998",
+                to = "92XXXXXXXXXX",
                 text = "Hello from Vonage"
             });
         }
